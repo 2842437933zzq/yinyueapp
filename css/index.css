@@ -1,0 +1,288 @@
+html,
+body,
+.heartmusic {
+    height: 100%;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+
+}
+
+
+.crest {
+    height: 24px;
+    background-color: #FE6464;
+}
+
+.nav {
+    height: .4rem;
+    background-color: #FFFFFF;
+}
+
+.nav .nav-text {
+    width: 100%;
+    display: flex;
+    height: .4rem;
+    font-size: .2rem;
+    padding: 0 .15rem 0 .15rem;
+}
+
+.nav .nav-text>span {
+    width: calc(100% / 3);
+    float: left;
+    line-height: .4rem;
+    text-align: center;
+}
+
+.nav .nav-text>span:first-child {
+    margin-left: 0px;
+}
+
+.nav-text>span:nth-child(1) {
+    width: .32rem;
+    height: .32rem;
+    background: url("../icons/caidan.png") no-repeat center center;
+    background-size: .32rem .32rem;
+    margin-top: 4px;
+}
+
+.nav-text>span:nth-child(5) {
+    width: .32rem;
+    height: .32rem;
+    background: url("../icons/dingwei.png") no-repeat center center;
+    background-size: .32rem .32rem;
+    margin-top: 4px;
+}
+
+.nav-text>span:nth-child(3) {
+    color: #FE6464;
+}
+
+
+.base {
+    width: 100%;
+    height: .6rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+}
+
+.base-text {
+    height: .6rem;
+    /* background-color: #444; */
+    padding: 0 .1rem;
+    background-color: #EFEFEF;
+}
+
+.base-text-list {
+    height: .6rem;
+}
+
+.portray {
+    width: .5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: .05rem;
+
+}
+
+.portray-info {
+    margin-top: .05rem;
+    margin-left: .1rem;
+
+}
+
+.portray-text {
+    max-width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.sheissoblue {
+    font-size: .14rem;
+    height: .24rem;
+    line-height: .24rem;
+}
+
+.singer {
+    font-size: .12rem;
+    height: .2rem;
+    line-height: .2rem;
+}
+
+.bluleo {
+    margin-top: .14rem;
+}
+
+.bluleo>span {
+    float: left;
+    width: .32rem;
+    height: .32rem;
+    margin-left: .2rem;
+}
+
+.bluleo .candanjian {
+    background: url("../icons/菜单.png") no-repeat center center;
+    background-size: .32rem .32rem;
+}
+
+.bluleo>span:nth-child(1) {
+    background: url("../icons/音乐暂停.png") no-repeat center center;
+    background-size: .32rem .32rem;
+}
+
+
+.bluleo>span:first-child {
+    margin-left: 0px;
+}
+
+.neirong {
+    height: calc(100% - .4rem - .6rem - 24px);
+    overflow-y: auto;
+}
+.neirong1{
+    height: 100%;
+    overflow-y: auto;
+}
+
+#carouselExampleIndicators {
+    overflow: hidden;
+    position: relative;
+}
+
+#carouselExampleIndicators ul {
+    margin: 0 auto;
+    width: 1rem;
+    height: 0.1rem;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 1.7rem;
+    left: 0rem;
+}
+
+.carousel-indicators li {
+    width: .065rem !important;
+    height: .065rem !important;
+    border-radius: 50%;
+    background-color: #FE6464;
+    border: 0rem !important;
+}
+
+.carousel-indicators li.active {
+    background-color: #FE6464;
+}
+
+.interlayer {
+    margin: 0 auto;
+    font-size: 16px;
+    padding: .1rem;
+    background-color: #EFEFEF;
+    text-align: center;
+}
+
+.sanger {
+    width: calc(100% / 3);
+    line-height: .3rem;
+     padding: .1rem 0rem .1rem .0rem ;
+}
+
+
+.sanger>span {
+    font-size: .16rem;
+    float: left;
+}
+
+.sanger-icon{
+    margin-left: .06rem;
+}
+
+.ge {
+    margin-left: .1rem;
+}
+
+
+.dibu {
+    position: relative;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.tuijian>h2 {
+    font-size: .15rem;
+    color: #FE6464;
+    text-align: center;
+    margin-top: .15rem;
+    margin-bottom: .15rem;
+    font-weight: bold;
+}
+
+.dibu .tuijian-text>div {
+    float: left;
+    width: calc(100% / 3 - .1rem + .1rem /3);
+    margin-right: .1rem;
+    margin-bottom: .1rem;
+    position: relative;
+
+}
+
+.dibu .tuijian-text>div:nth-child(3n) {
+    margin-right: 0;
+
+}
+
+
+.dibu .tuijian-font {
+    height: 0.32rem;
+    font-size: .12rem;
+}
+
+.dibu .mengceng {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.dibu .mengceng>div {
+    height: 0.24rem;
+}
+
+.mengceng-icon {
+    width: 0.16rem;
+    height: 0.16rem;
+    margin-top: .04rem;
+    /* background-color: #fff; */
+    background: url("../icons/erji.png") no-repeat center center;
+    background-size: .16rem .16rem
+}
+
+
+
+.mengceng-list {
+    font-size: .12rem;
+    line-height: .24rem;
+    margin: 0 .1rem;
+    color: #EFEFEF;
+}
+
+.tupian {
+    width: .32rem;
+    height: .32rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    background: url("../icons/播放02.png") no-repeat center center;
+    background-size: .32rem .32rem;
+}

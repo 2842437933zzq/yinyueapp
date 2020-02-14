@@ -1,0 +1,66 @@
+ //播放
+    audio.oncanplay = function () {
+
+        console.log('可以播放');
+        this.play();
+
+        $('.play').css({
+            backgroundImage: 'url("./icons/音乐播放.png")'
+          })
+
+        //   var picUrl = $.v.al.picUrl;
+        //   $('.portray').find('img').attr('src', )
+
+
+    }
+
+    $('.gequ').on('click', '.vbmo', function () {
+
+        var self = this;
+        //是否处于激活状态
+        if ($(this).hasClass('active')) {
+
+            //如果当前播放，就停止
+            var playStatus = $(this).data('paly');
+
+            if (playStatus == 1) {
+                audio.pause();
+                $(this).data('play', 0)
+            } else {
+                audio.play();
+                $(this).data('play', 1)
+            }
+
+        } else {
+
+            //歌曲id
+            var songId = $(this).data('id');
+            // console.log('songId ==> ', songId);
+
+            $.ajax({
+                type: 'GET',
+                url: baseAudioUrl,
+                data: {
+                    id: songId
+                },
+                success: function (result) {
+                    console.log('result ==> ', result);
+
+                    //查找激活的vbmo
+                    var $vbmo = $('.vbmo.active');
+                    // console.log('$vbmo==> ', $vbmo);
+
+                    if ($vbmo.length == 1) {
+                        $vbmo.removeClass('active').data('play', 0);
+                    }
+
+                    //设置audio链接
+                    $(audio).attr('src', result.data[0].url);
+                    $(self).addClass('active')
+
+                }
+            })
+        }
+
+    })
+
